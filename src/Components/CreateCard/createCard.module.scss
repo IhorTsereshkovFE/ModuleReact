@@ -1,0 +1,59 @@
+@import "../../style/vars.scss";
+
+.cardBox {
+  max-width: 350px;
+  width: 100%;
+  height: 350px;
+  background-color: rgb(255, 251, 241);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  .nametournament {
+    @include text(Cambria, 19px, 550, 20px);
+  }
+  .location {
+    @include text(Cambria, 17px, 550, 1px);
+    text-align: center;
+  }
+  .time {
+    @include text(Cambria, 15px, 550, 10px);
+  }
+  .prizeMoney {
+    @include text(Cambria, 20px, 550, 10px);
+  }
+  .team {
+    display: flex;
+    margin-bottom: 30px;
+    .team1 {
+      @include text(Cambria, 17px, 550, 1px);
+      color: rgb(0, 50, 136);
+    }
+    .dot {
+      width: 10px;
+      text-align: center;
+    }
+  }
+  .eventsTitle {
+    @include text(Cambria, 19px, 550, 10px);
+    color: $color_color_card;
+    text-align: center;
+  }
+  .events {
+    .eventsBox {
+      width: 320px;
+      display: flex;
+      justify-content: space-between;
+      column-gap: 5px;
+      .leftEvents {
+        @include text(Cambria, 17px, 550, 1px);
+        width: 90px;
+      }
+      .rightEvents {
+        @include text(Cambria, 17px, 550, 1px);
+        width: 220px;
+      }
+    }
+  }
+}

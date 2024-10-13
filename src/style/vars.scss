@@ -1,0 +1,24 @@
+$color_text_tittle: rgb(206, 255, 253);
+$color_color_card: rgb(134, 99, 36);
+$link_footer_color: rgb(56, 183, 175);
+$title_footer_color: rgb(244, 244, 244);
+$title_footer_color2: rgb(254, 234, 173);
+
+%link {
+  color: $link_footer_color;
+  font-family: "Poppins";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.75px;
+  text-align: left;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+@mixin text($font-family, $size, $weight, $margin-bottom) {
+  font-family: $font-family;
+  font-size: $size;
+  font-weight: $weight;
+  margin-bottom: $margin-bottom;
+}
