@@ -9,7 +9,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
+
+  @media (max-width: 375px) {
+    padding: 3px;
+  }
   .nametournament {
     @include text(Cambria, 19px, 550, 20px);
   }
@@ -41,11 +44,15 @@
     text-align: center;
   }
   .events {
+    margin-bottom: 5px;
     .eventsBox {
       width: 320px;
       display: flex;
       justify-content: space-between;
       column-gap: 5px;
+      @media (max-width: 375px) {
+        width: 305px;
+      }
       .leftEvents {
         @include text(Cambria, 17px, 550, 1px);
         width: 90px;
