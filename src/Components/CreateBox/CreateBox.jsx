@@ -5,13 +5,15 @@ import createCard from "../../Components/CreateCard/createCard.module.scss";
 function CreateBox({ item }) {
   return item.map((item, index) => {
     const nametournament = item.name;
-    const continent = item.continent;
-    const location = item.location;
-    const nameCountry = item.nameCountry;
-    const population = item.population;
-    const prizeMoney = item.prizeMoney;
-    const team1 = item.team1;
-    const team2 = item.team2;
+    const {
+      continent,
+      location,
+      nameCountry,
+      population,
+      prizeMoney,
+      team1,
+      team2,
+    } = item;
     let time;
     const arrEvent = [];
 

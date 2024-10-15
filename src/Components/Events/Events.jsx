@@ -3,8 +3,8 @@ import createCard from "../../Components/CreateCard/createCard.module.scss";
 
 function Events({ item, team1, team2 }) {
   return item.map((e, index) => {
-    const minute = e.minute;
-    const player = e.player;
+    const { minute, player } = e;
+
     let type = e.type;
     const teamE = e.team;
     let teamT;
